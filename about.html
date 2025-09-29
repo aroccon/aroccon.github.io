@@ -19,15 +19,31 @@
     nav a:hover {
       text-decoration: underline;
     }
+    .profile-bio {
+      display: flex;
+      align-items: center;   /* centers photo and bio vertically */
+      justify-content: flex-start;
+      margin-top: 2rem;
+      margin-bottom: 3rem;
+      gap: 2rem;
+      flex-wrap: wrap; /* makes it responsive */
+    }
+    .profile-bio img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 3px solid #f5c518;
+      object-fit: cover;
+      flex-shrink: 0;
+    }
+    .bio {
+      max-width: 600px;
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ccc;
+      text-align: justify;
+    }
   </style>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCYJ3J5GTJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HCYJ3J5GTJ');
-  </script>
 </head>
 <body>
 
@@ -39,6 +55,23 @@
     <a href="about.html">About</a>
   </nav>
 
+  <!-- Profile picture and bio at the top -->
+  <div class="profile-bio">
+    <img src="images/bio.png" alt="AR" />
+    <div class="bio">
+      <p>
+      Alessio Roccon is Assistant Professor at the University of Udine (IT). Previously, he was
+      postdoc at the Multiphase Flow laboratory - University of Udine (2020-2023) and at the
+      Institute of Fluid Mechanics and Heat Transfer - TU Wien (2017-2019). He received his PhD
+      in Environmental and Engineering Science from the University of Udine. His research
+      focuses on a variety of fundamental fluid mechanic problems where interactions between
+      turbulent flows and deformable interfaces occur. AR has wide research experience in
+      phase-field modeling and high-performance and GPU-computing of turbulent flows with
+      interfaces.
+      </p>
+    </div>
+  </div>
+
   <h1 style="color: #f5c518;">Contact</h1>
 
   <ul>
@@ -48,10 +81,9 @@
     <p>Email: alessio.roccon[at]tuwien.ac.at</p>
   </ul>
 
-    <ul>
-  <iframe src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aroccon&theme=github_dark" frameborder="0" width="1000" height="200"></iframe>
-    </ul>
-
+  <ul>
+    <iframe src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=aroccon&theme=github_dark" frameborder="0" width="1000" height="200"></iframe>
+  </ul>
 
 </body>
 </html>
