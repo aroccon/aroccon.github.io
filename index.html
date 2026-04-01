@@ -1,71 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Alessio Roccon</title>
-  <link rel="stylesheet" href="style.css" />
-  <style>
-    .news-list li {
-      margin-bottom: 12px;
-    }
-  </style>
-  <!-- Google tag (gtag.js) -->
-  <script async src="https://www.googletagmanager.com/gtag/js?id=G-HCYJ3J5GTJ"></script>
-  <script>
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
-    gtag('js', new Date());
-    gtag('config', 'G-HCYJ3J5GTJ');
-  </script>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Alessio Roccon</title>
+<link rel="stylesheet" href="style.css" />
+<style>
+.news-list li {
+margin-bottom: 12px;
+}
+.top-image-banner {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+.top-image-banner img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  object-position: center;
+  display: block;
+}
+.yellow-line {
+  width: 100%;
+  height: 4px;
+  background-color: #f5c518;
+}
+</style>
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-HCYJ3J5GTJ"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-HCYJ3J5GTJ');
+</script>
 </head>
 <body>
-  <div class="container">
-    <h1 style="color: #f5c518;">Alessio Roccon</h1>
-    <p>Assistant Professor (RTDa) in Fluid Mechanics at the University of Udine.</p>
 
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="publications.html">Publications</a>
-      <a href="codes.html">Codes</a>
-      <a href="scivis.html">SciVis</a>
-      <a href="teaching.html">Teaching</a>
-      <a href="about.html">About</a>
-    </nav>
+<div class="top-image-banner">
+  <img src="images/banner.jpg" alt="Fluid mechanics simulation">
+</div>
+<div class="yellow-line"></div>
 
-    <section>
-      <p>Here you can find information about my research, publications, and teaching activities. <br>
-      I am a researcher in Fluid Mechanics with a focus on numerical methods and simulations.<br>
-      Feel free to explore the links above to learn more about my research work and interests.</p>
+<div class="container">
+<h1 style="color: #f5c518;">Alessio Roccon</h1>
+<nav>
+<a href="index.html">Home</a>
+<a href="publications.html">Publications</a>
+<a href="codes.html">Codes</a>
+<a href="scivis.html">SciVis</a>
+<a href="teaching.html">Teaching</a>
+<a href="about.html">About</a>
+</nav>
+<section>
 
-      <h3>Latest News</h3>
-      <ul class="news-list">
-        <li><a href="https://cism.it/en/"> CISM Course</a>, 6th-10th July 2026, Udine, IT. <br>
+<div style="text-align: justify;">
+<p>Welcome to my website. I am Assistant Professor (RTDa) at the University of Udine, and my work focuses on the physics and numerical simulation of turbulent multiphase flows, with particular emphasis on heat and mass transfer phenomena.</p>
+<p>Turbulent multiphase flows are ubiquitous in both natural and industrial processes. Understanding, predicting, and controlling these complex systems is essential across a wide range of applications, including energy systems, environmental flows, chemical engineering, and advanced thermal management technologies. Through high-fidelity simulations, I investigate the intricate interactions between turbulence, interfaces, and phase-change.</p>
+<p>My research aims to uncover the fundamental mechanisms governing the dynamics of drops, bubbles, and particles in turbulent flows, while also identifying universal behaviors across different flow configurations. I am also an active developer, building efficient and scalable solvers that leverage GPU acceleration.</p>
+</div>
+
+<h3>Latest News</h3>
+<ul class="news-list">
+<li><a href="https://cism.it/en/"> CISM Course</a>, 6th-10th July 2026, Udine, IT. <br>
         Two Phase-flow and Phase-change: Experiments, Simulations and Modeling. <br> 
         Organizers: Matteo Bucci (MIT, USA), Alessio Roccon (UNIUD, IT).<br>
-        
-        <li><a href="https://664.euromech.org">Euromech Colloqiuium 664</a>, 8th-10th September 2027, Udine, IT. <br> 
+<li><a href="https://664.euromech.org">Euromech Colloqiuium 664</a>, 8th-10th September 2027, Udine, IT. <br> 
         Drops and bubbles in turbulence: Fragmentation, coalescence and interactions <br>
         Organizers: Alessio Roccon, Mahdi Saeedipour and Pedro Simões Costa. </li>
-
-        <li><a href="https://brescia2026.aimeta.it"> MS "Fluid Mechanics of phase-change"</a>, 7th-10th September 2026, AIMETA Congress, Brescia, IT. <br>
+<li><a href="https://brescia2026.aimeta.it"> MS "Fluid Mechanics of phase-change"</a>, 7th-10th September 2026, AIMETA Congress, Brescia, IT. <br>
         Organizers: Alessio Roccon (UNIUD, IT) and Mirko Gallo (Sapienza, IT).<br>
-
-        <li> <a href="https://doi.org/10.1017/jfm.2026.11119">Paper</a> on GPU-accelerated turbulence simulations published in PRF. </li>
-
-        <li> <a href="https://doi.org/10.1017/jfm.2026.11119">Paper</a> on drag reduction using viscoelastic fluids published in JFM. </li>
-
-        <li> <a href="https://doi.org/10.1016/j.cpc.2025.109956">Paper</a> associated with new update of MHIT36 published in CPC.</li>
-
-      </ul>
-
-      <img src="images/intro.png" alt="Description" style="width: 100%; max-width: 600px;">
-
-      <p>GitHub: <a href="https://github.com/aroccon">aroccon</a></p>
-      <p>ORCID: <a href="https://orcid.org/0000-0001-7618-7797" target="_blank" rel="noopener" style="color:#66ccff;">0000-0002-1825-0097</a></p>
-      <p>Email: alessio.roccon[at]uniud.it</p>
-      <p>Email: alessio.roccon[at]tuwien.ac.at</p>
-    </section>
-  </div>
+<li> <a href="https://doi.org/10.1017/jfm.2026.11119">Paper</a> on GPU-accelerated turbulence simulations published in PRF. </li>
+<li> <a href="https://doi.org/10.1017/jfm.2026.11119">Paper</a> on drag reduction using viscoelastic fluids published in JFM. </li>
+<li> <a href="https://doi.org/10.1016/j.cpc.2025.109956">Paper</a> associated with new update of MHIT36 published in CPC.</li>
+</ul>
+<img src="images/intro.png" alt="Description" style="width: 100%; max-width: 600px;">
+<p>GitHub: <a href="https://github.com/aroccon">aroccon</a></p>
+<p>ORCID: <a href="https://orcid.org/0000-0001-7618-7797" target="_blank" rel="noopener" style="color:#66ccff;">0000-0002-1825-0097</a></p>
+<p>Email: alessio.roccon[at]uniud.it</p>
+<p>Email: alessio.roccon[at]tuwien.ac.at</p>
+</section>
+</div>
 </body>
 </html>
